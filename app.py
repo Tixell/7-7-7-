@@ -9,7 +9,7 @@ import shutil
 import json
 from pathlib import Path
 
-PAGE_SIZE = 10
+PAGE_SIZE = 5
 FILE_DIR_PATH = "."
 
 repo_id = os.environ["DATASET"]
@@ -309,7 +309,7 @@ some sora-alpha-artists
         outputs=[output, generation_history, generated_prompt],
         concurrency_limit=4
     )
-    timer = gr.Timer(value=2)
+    timer = gr.Timer(value=30)
     timer.tick(fn=list_all_outputs, inputs=[generation_history], outputs=[generation_history])
     demo.load(fn=list_all_outputs, inputs=[generation_history], outputs=[generation_history])
     
