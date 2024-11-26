@@ -299,9 +299,9 @@ Open Source video generation tools allow artists to experiment with avant garde 
 However, as we are aware not everyone has the hardware or technical capability to run open source tools and models, we welcome tool makers to listen to and provide a path to true artist expression, with fair compensation to the artists.
 
 Enjoy,
+
 some sora-alpha-artists
 
-<code style="font-family: monospace;font-size: 16px;font-weight:bold">ARTISTS ARE NOT YOUR UNPAID R&D <br />
 ''', elem_id="manifesto")
     generate_button.click(
         fn=generate_video,
