@@ -246,7 +246,7 @@ with gr.Blocks(css=css) as demo:
                 )
                 existing_metadata = pd.read_csv(metadata_path)
                 print(existing_metadata)
-                for index, generation_list in existing_metadata.iloc[::-1].iterrows():
+                for index, generation_list in existing_metadata.iloc[-list_size:][::-1].iterrows():
                     print(generation_list)
                     generation_prompt = generation_list['prompt']
                     generation = generation_list['original_url']                    
