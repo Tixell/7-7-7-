@@ -315,4 +315,4 @@ some sora-alpha-artists
     
 # Launch the app
 if __name__ == "__main__":
-    demo.launch(ssr_mode=False)
+    demo.launch(ssr_mode=True)
